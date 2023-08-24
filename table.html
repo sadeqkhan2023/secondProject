@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat+Alternates:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Table</title>
   <style>
-    table, th, td, tr {
+    table {
+      border: 3px solid black;
+      padding: 3px;
+    }
+
+    th, td, tr {
       border: 1px solid black;
     }
   </style>
 </head>
 
-<body>
+<body style="font-family: Poppins;">
   <table>
       <tr>
+        <th rowspan="2" >Heading</th>
         <th>Students</th>
-        <th>Details</th>
+        <th colspan="3">Details</th>
       </tr>
 
       <tr>
@@ -27,6 +36,7 @@
       </tr>
     
     <tr>
+      <td rowspan="4">Student List</td>
       <td>1</td>
       <td>Victor</td>
       <td>Computer Science</td>
@@ -52,6 +62,87 @@
       <td>Rick</td>
       <td>Civil</td>
       <td>45678</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table style="text-align: center;
+  background-color: aquamarine;">
+  <h3 style="text-align: center;">College Time Table</h3>
+    <tr>
+      <td></td>
+      <th>8:30 - 9:30</th>
+      <th>9:30 - 10:30</th>
+      <th>10:30 - 11:30</th>
+      <th>11:30 - 12:30</th>
+      <th>12:30 - 2:00</th>
+      <th>2:00 - 3:00</th>
+      <th>3:00 - 4:00</th>
+      <th>4:00 - 5:00</th>
+    </tr>
+
+    <tr>
+      <th>MONDAY</th>
+      <td>- - - </td>
+      <td>SUB-1</td>
+      <td>SUB-2</td>
+      <td>SUB-3</td>
+      <td rowspan="6">Lunch</td>
+      <td>SUB-4</th>
+      <td>SUB-5</th>
+      <td>Counselling Class</th>
+    </tr>
+
+    <tr>
+      <th>TUESDAY</th>
+      <td>SUB-1</td>
+      <td>SUB-2</td>
+      <td>SUB-3</td>
+      <td>- - - </td>
+      <td>SUB-4</td>
+      <td>SUB-5</td>
+      <td>Library</td>
+    </tr>
+
+    <tr>
+      <th>WEDNESDAY</th>
+      <td>SUB-1</td>
+      <td>SUB-2</td>
+      <td>SWA</td>
+      <td>- - - </td>
+      <td colspan="3">Lab</td>
+    </tr>
+
+    <tr>
+      <th>THURSDAY</th>
+      <td>SUB-1</td>
+      <td>SUB-2</td>
+      <td>SUB-3</td>
+      <td>- - - </td>
+      <td>SUB-4</td>
+      <td>SUB-5</td>
+      <td>Library</td>
+    </tr>
+
+    <tr>
+      <th>FRIDAY</th>
+      <td>SUB-1</td>
+      <td>SUB-2</td>
+      <td>SUB-3</td>
+      <td>- - - </td>
+      <td>SUB-4</td>
+      <td>SUB-5</td>
+      <td>Library</td>
+    </tr>
+
+    <tr>
+      <th>SATURDAY</th>
+      <td>SUB-1</td>
+      <td colspan="3">Seminar</td>
+      <td>SUB-4</td>
+      <td>SUB-5</td>
+      <td>Library</td>
     </tr>
   </table>
 
